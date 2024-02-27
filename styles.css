@@ -57,4 +57,45 @@ body{
     width: 414px;
     max-width: 415px;
     margin: auto;
+    background-color: white;
+}
+
+.title h1{
+    visibility: hidden;
+}
+
+header{
+  
+    position: fixed;
+    top: 0px;
+}
+
+header h2{
+    visibility: hidden;
+}
+
+header h2 svg{
+    visibility: visible;
+    float: left;
+    margin-left: 2em;;
+}
+
+header ul{
+    visibility: hidden;
+}
+
+[href="#home"] svg{
+    background-color:#EB5428;
+    width: 15em;
+    visibility: visible;
+    top: 0px;
+    right: 40px;
+}
+
+header img{
+    width: 2em;
+}
+h1{
+    font-family:'Bebas Neue';
+    font-size: 40px;;
 }
