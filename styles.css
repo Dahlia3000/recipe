@@ -58,14 +58,18 @@ body{
     max-width: 415px;
     margin: auto;
     background-color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
 }
 
+dt{
+    font-weight: bold;
+}
 .title h1{
     visibility: hidden;
 }
 
 header{
-  
     position: fixed;
     top: 0px;
 }
@@ -80,16 +84,21 @@ header h2 svg{
     margin-left: 2em;;
 }
 
+header + h3{
+    top: 90px;
+}
+
 header ul{
     visibility: hidden;
 }
 
 [href="#home"] svg{
+    position: relative;
     background-color:#EB5428;
-    width: 15em;
+    width: 13em;
     visibility: visible;
-    top: 0px;
-    right: 40px;
+    top: -20px;
+    right: -80px;
 }
 
 header img{
@@ -98,4 +107,100 @@ header img{
 h1{
     font-family:'Bebas Neue';
     font-size: 40px;;
+}
+
+h1 + ul{
+    display: flex;
+    flex-direction: row;
+    width: 414px;
+    height: 250px;
+    background-color: #F2F2F2; 
+    align-items: end;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+}
+
+#web-nav h1{
+    position: relative;
+    text-align: center;
+    top: 175px;
+}
+
+#web-nav li{
+    color:#EB5428;
+}
+
+section + img{
+    width: 414px;
+}
+
+#recipe-body{
+    background-color: #F2F2F2;
+    padding: 0.5em;
+}
+
+#recipe-body p + p{
+    margin: 1em auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+
+.details dl{
+    margin-top: 0.5em;
+}
+
+#prep{
+    display: grid;
+    grid-template-columns: 110px 110px;
+
+}
+
+#cook{
+    display: grid;
+    grid-template-columns: 110px 110px;
+}
+
+#total{
+    display: grid;
+    grid-template-columns: 110px 110px;
+}
+
+#author{
+    display: grid;
+    grid-template-columns: 110px 180px;
+}
+
+#servings{
+    display: grid;
+    grid-template-columns: 110px 110px;
+}
+
+.ingredients h2{
+    margin: 1em auto;
+}
+
+.ingredients li{
+    list-style-type: square;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.directions li{
+    margin: 1em auto 1em 1em;
+    list-style-type: decimal;
+}
+
+#side-dishes{
+    background-color: #7abfbf;
+}
+
+dl{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
