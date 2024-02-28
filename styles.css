@@ -65,7 +65,7 @@ body{
 dt{
     font-weight: bold;
 }
-.title h1{
+.title p{
     visibility: hidden;
 }
 
@@ -329,6 +329,8 @@ footer img{
     bottom: 2em;
 }
 
+
+
 @media screen and (min-width:768px) {
 
     html{
@@ -528,10 +530,6 @@ footer img{
 
     .details dd{
         grid-row: 2/3;
-        just
     }
-
-#tacos svg{
-visibility: hidden;
 
 }
