@@ -57,7 +57,7 @@ body{
     width: 414px;
     max-width: 415px;
     margin: auto;
-    background-color: white;
+    background-color: #F2F2F2;
     font-family: 'Montserrat';
     font-size: 16px;
 }
@@ -70,8 +70,12 @@ dt{
 }
 
 header{
+    background-color: white;
+    height: 80px;
+    width: 414px;
     position: fixed;
     top: 0px;
+    z-index: 1;
 }
 
 header h2{
@@ -81,7 +85,7 @@ header h2{
 header h2 svg{
     visibility: visible;
     float: left;
-    margin-left: 2em;;
+    margin-left: 1em;;
 }
 
 header + h3{
@@ -93,12 +97,25 @@ header ul{
 }
 
 [href="#home"] svg{
-    position: relative;
+    position: absolute;
     background-color:#EB5428;
     width: 13em;
+    height: 80px;
     visibility: visible;
-    top: -20px;
-    right: -80px;
+    top: 0px;
+    right: 100px;
+}
+
+[href="#avatar"] svg{
+    position: absolute;
+    width: 4em;
+    height: 50px;
+    visibility: visible;
+    top: 0px;
+    right: 10px;
+    background-color: white;
+    fill: white;
+   
 }
 
 header img{
@@ -109,32 +126,63 @@ h1{
     font-size: 40px;;
 }
 
-#social{
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: end;
-    height: 200px;
+fieldset{
+    position: relative;
+    top: -168em;
+    right: 4px;
 }
-#social ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+
+fieldset svg{
+    position: relative;
+    fill:#EB5428;
+    background-color: #EB5428;
+    height: 41px;
+    right: 18px;
+    top: 16.5px;
+}
+
+label{
+    visibility: hidden;
+}
+
+input{
+    border: 2px solid #EB5428;
+    
+    width: 250px;
+    height: 35px;
+}
+
+#tacos{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     width: 414px;
-    height: 225px;
-    background-color: #F2F2F2; 
-    align-items: end;
+    height: 245px;
+}
+#tacos ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+}
+
+#tacos svg{
+    transform:translate(-30px, -20px)
+}
+
+#social li{
     font-family: 'Bebas Neue';
     font-size: 20px;
+   
 }
 
-#web-nav h1{
+#tacos h1{
     position: relative;
     text-align: center;
-    top: 175px;
+    top: -30px;
 }
 
-#web-nav li{
+#tacos li{
     color:#EB5428;
 }
 
@@ -240,24 +288,6 @@ h3{
     grid-row: 1/2;
 }
 
-fieldset{
-    position: relative;
-    top: -170em;
-    right: -40px;
-}
-
-fieldset svg{
-    fill:#EB5428;
-    background-color: #EB5428;
-   
-}
-
-label{
-    visibility: hidden;
-}
-
-input{
-    border: solid #EB5428;
-    width: 200px;
-    height: 35px;
+footer img{
+    width: 5em;
 }
