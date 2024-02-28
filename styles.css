@@ -147,7 +147,6 @@ label{
 
 input{
     border: 2px solid #EB5428;
-    
     width: 250px;
     height: 35px;
 }
@@ -325,9 +324,9 @@ footer p{
 }
 
 footer img{
-    position:v relative;
-    width: 5em;
-    bottom: 20em;
+    position: relative;
+    width: 10em;
+    bottom: 2em;
 }
 
 @media screen and (min-width:768px) {
@@ -345,7 +344,7 @@ footer img{
     header{
         height: 200px;
         width: 768px;
-        display: grid;
+        display: flex;
         align-items: end;
     }
 
@@ -361,8 +360,15 @@ footer img{
 
     header ul{
         visibility: visible;
-        display: grid;
+        display: flex;
        
+    }
+
+    header a{
+        color:#EB5428;
+        text-decoration: none;
+        font-family: 'Bebas Neue';
+        font-weight: bold;
     }
 
     section + img{
@@ -423,4 +429,109 @@ footer img{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    input{
+        position: fixed;
+        top: 1.5em;
+        z-index: 1;
+        right: 17em;
+    }
+
+    fieldset svg{
+        position: relative;
+        fill:#EB5428;
+        background-color: #EB5428;
+        height: 41px;
+        right: -36.7em;
+        top: 1.16em;
+        z-index: 1;
+    }
+
+    [href="#avatar"] svg{
+        top: 1em;
+    }
+
+    #last h3{
+        visibility: hidden;
+    }
+
+    #social{
+        display: grid;
+        justify-content: end;
+        float: right;
+    }
+
+    #social ul{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        width: 400px;
+    }
+
+    #social li{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #social svg{
+        transform: translate(14px, -57px);
+    }
+}
+
+@media screen and (min-width:1280px){
+    
+    html{
+        width: 100%;
+    }
+    
+    body{
+        width: 1280px;
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    header{
+        width: 1280px;
+        height: 100px;
+    }
+
+    section + img{
+        width: 600px;
+    }
+
+    #tacos h1{
+        top: 0em;
+        text-align: center;
+        right: -450px;
+    }
+
+    #big-details{
+        background-color: black;
+        color:#7abfbf;
+        height: 50px;
+    }
+    .details{
+       background-color: black;
+       color: #7abfbf;
+        display: flex;
+    }
+
+    .details dl{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .details dt{
+        grid-row: 1/2;
+    }
+
+    .details dd{
+        grid-row: 2/3;
+        just
+    }
+
+#tacos svg{
+visibility: hidden;
+
 }
