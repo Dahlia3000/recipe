@@ -150,6 +150,11 @@ h2{
     font-family: 'Bebas Neue';
 }
 
+h3{
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+}
+
 .details dl{
     margin-top: 0.5em;
 }
@@ -199,8 +204,31 @@ h2{
     background-color: #7abfbf;
 }
 
-dl{
+.sides{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+}
+
+.sides img{
+    grid-column: 1/2;
+    width: 6em;
+    top: -20em;
+}
+
+.sides h3{
+    width: 200px;
+    height: 40px;
+    grid-column: 2/3;
+}
+
+.sides-info{
+    grid-column: 2/3;
+}
+.sides p{
+    height: 20px;
+}
+
+.sides p:nth-child(1){
+    grid-row: 1/2;
 }
