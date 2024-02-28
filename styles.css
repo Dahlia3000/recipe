@@ -109,11 +109,18 @@ h1{
     font-size: 40px;;
 }
 
-h1 + ul{
-    display: flex;
-    flex-direction: row;
+#social{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    height: 200px;
+}
+#social ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 414px;
-    height: 250px;
+    height: 225px;
     background-color: #F2F2F2; 
     align-items: end;
     justify-content: center;
@@ -213,7 +220,7 @@ h3{
 .sides img{
     grid-column: 1/2;
     width: 6em;
-    top: -20em;
+    
 }
 
 .sides h3{
@@ -231,4 +238,26 @@ h3{
 
 .sides p:nth-child(1){
     grid-row: 1/2;
+}
+
+fieldset{
+    position: relative;
+    top: -170em;
+    right: -40px;
+}
+
+fieldset svg{
+    fill:#EB5428;
+    background-color: #EB5428;
+   
+}
+
+label{
+    visibility: hidden;
+}
+
+input{
+    border: solid #EB5428;
+    width: 200px;
+    height: 35px;
 }
