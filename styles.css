@@ -288,6 +288,139 @@ h3{
     grid-row: 1/2;
 }
 
+#social h2, h3{
+    visibility: hidden;
+}
+#last{
+    background-color: white;
+}
+
+#social{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  
+}
+#social ul{
+    display: flex;
+    margin-left: 2em;
+
+    justify-content: center;
+}
+
+#social svg{
+    transform: translate(-30px, -60px);
+}
+#social li{
+    color:#EB5428;
+}
+
+footer p{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: end;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+}
+
 footer img{
+    position:v relative;
     width: 5em;
+    bottom: 20em;
+}
+
+@media screen and (min-width:768px) {
+
+    html{
+        width: 100%;
+    }
+    
+    body{
+        width: 768px;
+        max-width: 769px;
+        margin: auto;
+    }
+
+    header{
+        height: 200px;
+        width: 768px;
+        display: grid;
+        align-items: end;
+    }
+
+    [href="#home"] svg{
+        position: absolute;
+        background-color:#EB5428;
+        width: 6em;
+        height: 80px;
+        visibility: visible;
+        top: 0px;
+        left: 0px;
+    }
+
+    header ul{
+        visibility: visible;
+        display: grid;
+       
+    }
+
+    section + img{
+        width: 768px;
+    }
+
+    #det-ingr{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .details{
+        display: grid;
+        justify-content: center;
+
+        }
+    
+    .ingredients{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .ingredients ul{
+        margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    }
+
+    .ingredients h2{
+       float: left;
+        margin: 0px 0px 0px 1em;
+    }
+
+    .directions{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    .directions ul{
+        margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    }
+
+    h3{
+        visibility: visible;
+    }
+
+    .sides{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
